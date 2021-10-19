@@ -13,9 +13,9 @@ type Mutation {
 }
   type User {
     _id: ID!
-    username: String
-    email: String
-    bookCount: Int
+    username: String!
+    email: String!
+    bookCount: Int!
     savedBooks: [Book]
   }
 
@@ -30,17 +30,17 @@ type Mutation {
   
   input BookInput {
     authors: [String]
-    description: String
-    bookId: String
-    image: String
-    link: String
-    title: String
+    description: String!
+    bookId: String!
+    image: String!
+    link: String!
+    title: String!
   }
   
     type Auth {
       token: ID!
       user: User
-    }
+  }
 `;
 
 module.exports = typeDefs;
