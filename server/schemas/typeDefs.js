@@ -32,8 +32,8 @@ type Mutation {
     authors: [String]
     description: String!
     bookId: String!
-    image: String!
-    link: String!
+    image: String
+    link: String
     title: String!
   }
   
